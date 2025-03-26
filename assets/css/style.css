@@ -4,9 +4,9 @@
 /* VARIABLES */
 :root {
     --c-dark: #212529;
-    --c-brand: #4e57d4;
-    --c-brand-light: #6970dd;
-    --c-brand-rgb: 78, 87, 212;
+    --c-brand: #253159;
+    --c-brand-light: #374983;
+    --c-brand-rgb: 37, 49, 89;
     --c-body: #727272;
     --font-base: "ClashDisplay", sans-serif;
     --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
@@ -84,6 +84,11 @@ img {
     color: var(--c-brand);
 }
 
+.logo {
+    width: 50%;
+    height: 50%;
+}
+
 
 /* BTN */
 .btn {
@@ -109,9 +114,13 @@ img {
 
 /* HERO */
 #hero {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../images/hero-1.jpg);
+    background: /*linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), */url(../images/palacio_da_justiça_02_c.jpg);
     background-position: center;
     background-size: cover;
+}
+
+.foto-hero {
+    max-height: 450px;
 }
 
 
