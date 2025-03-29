@@ -10,3 +10,22 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+document.getElementById("sendEmailButton").addEventListener("click", function () {
+  // E-mail fixo para o qual a mensagem será enviada
+  const emailTo = "ironflemis22@gmail.com";
+  const subject = encodeURIComponent(document.getElementById("emailSubject").value.trim());
+  const body = encodeURIComponent(document.getElementById("emailBody").value.trim());
+
+  // Validação simples: verificar se os campos estão preenchidos
+  if (!subject || !body) {
+      alert("Por favor, preencha o assunto e a mensagem.");
+      return;
+  }
+
+  // URL para abrir o Gmail com os campos preenchidos
+  const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailTo}&su=${subject}&body=${body}`;
+
+  // Abrindo o Gmail em uma nova aba
+  window.open(gmailURL, "_blank");
+});

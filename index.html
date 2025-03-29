@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg bg-white sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img class="logo" src="./assets/images/logo_marcelo_teste.png" alt="">
+                <img class="logo" src="./assets/images/marcelo-andreolli-logo.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,19 +37,10 @@
                         <a class="nav-link" href="areas-atuacao.html">Áreas de Atuação</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="curriculo.html">Currículo</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="contato.html">Contato</a>
                     </li>
                 </ul>
                 <span class="me-3">|</span>
-                <a href="https://www.linkedin.com" target="_blank" class="btn btn-primary me-2">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="btn btn-danger me-2">
-                    <i class="bi bi-instagram"></i>
-                </a>
                 <a href="https://www.whatsapp.com" target="_blank" class="btn btn-success">
                     <i class="bi bi-whatsapp"></i>
                 </a>
@@ -83,15 +74,26 @@
             <div class="row">
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
                     <div class="section-title">
-                        <h1 class="display-4 fw-semibold">Quem Sou</h1>
+                        <h1 class="display-4 fw-semibold">Quem Somos</h1>
                         <div class="line"></div>
                         <p>Enfrentando desafios legais em Brasília? Conte com a expertise de um Advogado Civil e Criminalista.</p>
                     </div>
                 </div>
             </div>
             <div class="row g-4 text-center ">
-                <div class="col-md-4">
+                <div class="col-md-2">
 
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="./assets/images/person-1.jpg" alt="">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Dr. Marcelo Andreolli</h4>
+                            <p class="mb-0 text-white">Advogado</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
                     <div class="team-member image-zoom">
@@ -99,10 +101,13 @@
                             <img src="./assets/images/person-2.jpg" alt="">
                         </div>
                         <div class="team-member-content">
-                            <h4 class="text-white">Dr. Marcelo Andreolli</h4>
+                            <h4 class="text-white">Dr. Pai do Marcelo</h4>
                             <p class="mb-0 text-white">Advogado</p>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-2">
+                    
                 </div>
             </div>
         </div>
@@ -122,24 +127,20 @@
             </div>
             <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="250">
                 <div class="col-lg-8">
-                    <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
-                        <div class="form-group col-lg-6">
-                            <input type="text" class="form-control" placeholder="Nome">
-                        </div>
-                        <div class="form-group col-lg-6">
-                            <input type="text" class="form-control" placeholder="Sobrenome">
+                    <form id="contactForm" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+                        <a href="" class="btn btn-success">Entre em contato conosco pelo Whatsapp <i class="bi bi-whatsapp"></i></a>
+                        <hr>
+                        <p>Ou nos envie um e-mail:</p>
+                        <div class="form-group col-lg-12">
+                            <label for="emailSubject">Assunto:</label>
+                            <input type="text" id="emailSubject" class="form-control" placeholder="Assunto" required>
                         </div>
                         <div class="form-group col-lg-12">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="form-group col-lg-12">
-                            <input type="text" class="form-control" placeholder="Assunto">
-                        </div>
-                        <div class="form-group col-lg-12">
-                            <textarea name="message" rows="5" class="form-control" placeholder="Digite sua mensagem"></textarea>
+                            <label for="emailBody">Mensagem:</label>
+                            <textarea id="emailBody" name="message" rows="5" class="form-control" placeholder="Digite sua mensagem" required></textarea>
                         </div>
                         <div class="form-group col-lg-12 d-grid">
-                            <button class="btn btn-brand">Enviar Mensagem</button>
+                            <button type="button" id="sendEmailButton" class="btn btn-brand">Enviar E-mail</button>
                         </div>
                     </form>
                 </div>
@@ -153,7 +154,7 @@
             <div class="container">
                 <div class="row gy-5">
                     <div class="col-lg-3 col-sm-6">
-                        <a href="#"><img style="width: 70%;" src="./assets/images/logo_marcelo_teste.png" alt=""></a>
+                        <a href="#"><img style="width: 70%;" src="./assets/images/marcelo-andreolli-logo-negativa.png" alt=""></a>
                         <div class="line"></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, hic!</p>
                         <div class="social-icons">
@@ -181,6 +182,17 @@
                             <li>(61) 99999-9999</li>
                             <li>www.example.com</li>
                         </ul>
+                        <div class="map-container" style="width: 100%; height: 200px; margin-top: 1rem;">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509684!2d144.9630577153152!3d-37.81410797975162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5776d368edbf012!2sFederation+Square!5e0!3m2!1sen!2sbr!4v1618501534545!5m2!1sen!2sbr"
+                                width="100%"
+                                height="200"
+                                style="border: 0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -84,9 +84,9 @@ img {
     color: var(--c-brand);
 }
 
-.logo {
-    width: 50%;
-    height: 50%;
+.navbar-brand img {
+    max-width: 250px; /* Ajuste o valor conforme necessário */
+    height: auto; /* Mantém a proporção */
 }
 
 
