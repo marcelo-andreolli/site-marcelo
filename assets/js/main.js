@@ -13,15 +13,17 @@ AOS.init({
 
 document.getElementById("sendEmailButton").addEventListener("click", function () {
   // E-mail fixo para o qual a mensagem será enviada
-  const emailTo = "ironflemis22@gmail.com";
+  const emailTo = "m.andreolliadv@gmail.com";
   const subject = encodeURIComponent(document.getElementById("emailSubject").value.trim());
   const body = encodeURIComponent(document.getElementById("emailBody").value.trim());
 
   // Validação simples: verificar se os campos estão preenchidos
   if (!subject || !body) {
-      alert("Por favor, preencha o assunto e a mensagem.");
+      document.querySelector('.error').style.display = 'block';
       return;
   }
+
+  document.querySelector('.error').style.display = 'none';
 
   // URL para abrir o Gmail com os campos preenchidos
   const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailTo}&su=${subject}&body=${body}`;

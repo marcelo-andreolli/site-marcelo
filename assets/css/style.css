@@ -1,14 +1,16 @@
 /* FONTS */
 @import url(../css/clash-display.css);
+@import url(../css/palatino-linotype.css);
 
 /* VARIABLES */
 :root {
     --c-dark: #212529;
     --c-brand: #253159;
-    --c-brand-light: #374983;
+    --c-brand2: #edbf5e;
+    --c-brand-light: #747d99;
     --c-brand-rgb: 37, 49, 89;
     --c-body: #727272;
-    --font-base: "ClashDisplay", sans-serif;
+    --font-base: "Palatino Linotype", sans-serif;
     --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
     --transition: all 0.5s ease;
 }
@@ -76,12 +78,17 @@ img {
 }
 
 .navbar-nav .nav-link {
+    font-family: 'ClashDisplay';
     font-weight: 500;
     color: var(--c-dark);
 }
 
+.navbar-nav .nav-link:hover {
+    color: var(--c-brand2);
+}
+
 .navbar-nav .nav-link.active {
-    color: var(--c-brand);
+    color: var(--c-brand-light);
 }
 
 .navbar-brand img {
@@ -114,13 +121,27 @@ img {
 
 /* HERO */
 #hero {
-    background: /*linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), */url(../images/palacio_da_justiça_02_c.jpg);
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../images/palacio_da_justiça_02.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .foto-hero {
     max-height: 450px;
+}
+
+.custom-img {
+    height: 1000px;
+    width: auto;
+    padding-top: 300px;
+}
+
+@media (max-width: 992px) { 
+    .custom-img {
+        height: 700px;
+        width: auto;
+        padding-top: 0px;
+    }
 }
 
 
@@ -141,7 +162,6 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 /* ICONBOX */
 .iconbox {
@@ -290,6 +310,10 @@ img {
 #contact .form-control:focus {
     box-shadow: none;
     border-color: var(--c-brand);
+}
+
+.error {
+    display: none;
 }
 
 /* FOOTER */
