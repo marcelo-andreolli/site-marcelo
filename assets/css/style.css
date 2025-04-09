@@ -222,6 +222,11 @@ img {
     color: white;
 }
 
+.card-img-top {
+    width: auto;
+    max-height: 200px;
+}
+
 /* COUNTER */
 #counter {
     background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../images/counter.jpg);
