@@ -118,6 +118,12 @@ img {
     color: white;
 }
 
+.btn-brand:active {
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+    color: white;
+}
+
 
 /* HERO */
 #hero {
