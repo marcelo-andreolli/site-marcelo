@@ -124,32 +124,40 @@ img {
     color: white;
 }
 
-
 /* HERO */
 #hero {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../images/palacio_da_justiça_02.jpg);
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../images/stf_01.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.foto-hero {
-    max-height: 450px;
-}
-
-.custom-img {
-    height: 1000px;
+/* Remove espaços extras da imagem */
+.align-bottom {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: block;
     width: auto;
-    padding-top: 300px;
 }
 
-@media (max-width: 992px) { 
-    .custom-img {
-        height: 700px;
-        width: auto;
-        padding-top: 0px;
+/* Ajuste opcional para mobile */
+@media (max-width: 992px) {
+    #hero .row {
+        align-items: flex-end !important;
     }
 }
 
+@media (max-width: 992px) {
+    .img-mobile {
+        max-height: 60vh;  /* Ajuste este valor conforme necessário */
+        width: auto;       /* Mantém a proporção */
+        margin: 0 auto;    /* Centraliza horizontalmente se precisar */
+    }
+    
+    /* Opcional: se a imagem ainda estiver muito larga */
+    .img-mobile {
+        max-width: 100%;   /* Limita a largura */
+    }
+}
 
 /* SECTION TITLE */
 .section-title {
