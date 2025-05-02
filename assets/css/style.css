@@ -124,6 +124,12 @@ img {
     color: white;
 }
 
+.btn-brand-light {
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+    color: white;
+}
+
 /* HERO */
 #hero {
     background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../images/stf_01.jpg);
