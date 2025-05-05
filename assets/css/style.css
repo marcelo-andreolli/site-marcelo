@@ -137,7 +137,6 @@ img {
     background-size: cover;
 }
 
-/* Remove espaços extras da imagem */
 .align-bottom {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -145,7 +144,6 @@ img {
     width: auto;
 }
 
-/* Ajuste opcional para mobile */
 @media (max-width: 992px) {
     #hero .row {
         align-items: flex-end !important;
@@ -154,14 +152,13 @@ img {
 
 @media (max-width: 992px) {
     .img-mobile {
-        max-height: 60vh;  /* Ajuste este valor conforme necessário */
-        width: auto;       /* Mantém a proporção */
-        margin: 0 auto;    /* Centraliza horizontalmente se precisar */
+        max-height: 60vh;  
+        width: auto;       
+        margin: 0 auto;    
     }
     
-    /* Opcional: se a imagem ainda estiver muito larga */
     .img-mobile {
-        max-width: 100%;   /* Limita a largura */
+        max-width: 100%;
     }
 }
 
@@ -196,17 +193,6 @@ img {
     flex: none;
 }
 
-/* SERVICE */
-/*
-#services {
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(../images/hand-shake-1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 1;
-}
-*/
 .service {
     position: relative;
     overflow: hidden;
@@ -307,6 +293,14 @@ img {
 .team-member:hover .team-member-content {
     opacity: 1;
     bottom: 24px;
+}
+
+.team-image {
+    max-height: 600px;
+}
+
+#arimatea {
+    background-color: var(--c-brand);
 }
 
 /* CONTACT */
